@@ -1,0 +1,25 @@
+{
+  "name": "sunbrook",
+  "version": "1.0.0",
+  "description": "Website for Sunbrook Condominiums",
+  "main": "index.js",
+  "scripts": {
+    "build": "eleventy",
+    "watch": "eleventy --watch",
+    "serve": "eleventy --serve",
+    "clean": "rm -rf dist/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/spncrhrstn/sunbrook.git"
+  },
+  "author": "Spencer Harston",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/spncrhrstn/sunbrook/issues"
+  },
+  "homepage": "https://github.com/spncrhrstn/sunbrook#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^0.11.0"
+  }
+}
