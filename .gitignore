@@ -1,4 +1,4 @@
-# The built site files
+# The built site files. Don't need to check these in to version control
 dist/
 
 # Logs
