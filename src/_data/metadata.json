@@ -1,4 +1,6 @@
 {
     "title" : "Sunbrook Condominiums",
-    "description":"Sunbrook Condominiums is a community nestled in the North Ogden valley."
+    "description":"Sunbrook Condominiums is a community nestled in the North Ogden valley.",
+    "baseurl":"https://www.sunbrookcondominiums.com",
+    "repo":"https://github.com/spncrhrstn/sunbrook"
 }
