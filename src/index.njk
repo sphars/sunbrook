@@ -2,8 +2,13 @@
 layout: _layouts/_base.njk 
 ---
 
-<h1>{{ metadata.title }}</h1>
+{%- include '_partials/_hero.njk' %}
 
-<p>{{ metadata.description }}</p>
-
-<p>Site coming soon!</p>
+<section class="section">
+    <div class="container">
+        <h1 class="title">{{ metadata.title }}</h1>
+        
+        <p class="subtitle">{{ metadata.description }}</p>
+        
+    </div>
+</section>
