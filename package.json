@@ -8,8 +8,8 @@
     "watch": "npm run css-watch & eleventy --watch",
     "serve": "npm run css-watch & eleventy --serve",
     "clean": "rm -rf dist/",
-    "css-build" : "node-sass --omit-source-map-url src/sass/site.scss src/assets/css/site.css",
-    "css-watch" : "npm run css-build -- --watch"
+    "css-build": "node-sass --omit-source-map-url src/sass/site.scss src/assets/css/site.css",
+    "css-watch": "npm run css-build -- --watch"
   },
   "repository": {
     "type": "git",
@@ -23,9 +23,8 @@
   "homepage": "https://github.com/spncrhrstn/sunbrook#readme",
   "devDependencies": {
     "@11ty/eleventy": "^0.11.0",
+    "bulma": "^0.9.1",
     "node-sass": "^4.14.1"
   },
-  "dependencies": {
-    "bulma": "^0.9.0"
-  }
+  "dependencies": {}
 }
