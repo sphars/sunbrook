@@ -4,10 +4,12 @@
   "description": "Website for Sunbrook Condominiums",
   "main": "index.js",
   "scripts": {
-    "build": "eleventy",
-    "watch": "eleventy --watch",
-    "serve": "eleventy --serve",
-    "clean": "rm -rf dist/"
+    "build": "npm run css-build && eleventy",
+    "watch": "npm run css-watch & eleventy --watch",
+    "serve": "npm run css-watch & eleventy --serve",
+    "clean": "rm -rf dist/",
+    "css-build" : "node-sass --omit-source-map-url src/sass/site.scss src/assets/css/site.css",
+    "css-watch" : "npm run css-build -- --watch"
   },
   "repository": {
     "type": "git",
@@ -20,7 +22,8 @@
   },
   "homepage": "https://github.com/spncrhrstn/sunbrook#readme",
   "devDependencies": {
-    "@11ty/eleventy": "^0.11.0"
+    "@11ty/eleventy": "^0.11.0",
+    "node-sass": "^4.14.1"
   },
   "dependencies": {
     "bulma": "^0.9.0"
