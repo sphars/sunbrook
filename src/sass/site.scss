@@ -14,6 +14,9 @@ $primary: $green;
 $navbar-height: 4.5rem;
 $navbar-item-img-max-height: 3rem;
 
+//hero
+$hero-body-padding: 6rem 1.5rem !default;
+
 
 //custom css
 html, body{
@@ -44,10 +47,6 @@ body{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center 20%;
-}
-
-.hero-body{
-    text-shadow: black 2px 2px 2px;
 }
 
 main{
