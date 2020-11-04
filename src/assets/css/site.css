@@ -20,7 +20,7 @@ body {
   height: 100%;
   z-index: -1;
   opacity: 0.5;
-  background-image: url("/assets/images/sunbrook-condos-sm.jpg");
+  background-image: url("/assets/img/sunbrook-condos-sm.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center 20%; }
@@ -38,15 +38,15 @@ footer.footer {
 
 @media (min-width: 768px) {
   .hero:after {
-    background-image: url("/assets/images/sunbrook-condos-lg.jpg"); } }
+    background-image: url("/assets/img/sunbrook-condos-lg.jpg"); } }
 
 @media (min-width: 1920px) {
   .hero:after {
-    /* background-image: url('/assets/images/ben-lomond-large.jpg'); */ } }
+    /* background-image: url('/assets/img/ben-lomond-large.jpg'); */ } }
 
 @media (min-width: 2560px) {
   .hero:after {
-    background-image: url("/assets/images/sunbrook-condos-lg.jpg"); } }
+    background-image: url("/assets/img/sunbrook-condos-lg.jpg"); } }
 
 /*! bulma.io v0.9.1 | MIT License | github.com/jgthms/bulma */
 /* Bulma Utilities */
