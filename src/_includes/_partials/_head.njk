@@ -1,7 +1,19 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <meta name="description" content="{{ description or metadata.description }}">
 <meta name="author" content="{{ author or metadata.author }}"/>
+<meta name="keywords" content="HOA, Condos, North Ogden">
+
+<meta property="og:site_name" content="Sunbrook Condominiums">
+<meta property="og:title" content="{%- if renderData.title %}{{ renderData.title }} | {% elif title %}{{ title }} | {% endif %}{{ metadata.title }}">
+<meta property="og:type" content="website">
+<meta property="og:description" content="{{ description or metadata.description }}">
+<meta property="og:image" content="/assets/img/sunbrook-condos-lg.jpg">
+<meta property="og:url" content="{{ metadata.baseurl + page.url }}">
+
+<meta property="twitter:title" content="{%- if renderData.title %}{{ renderData.title }} | {% elif title %}{{ title }} | {% endif %}{{ metadata.title }}">
+
 <title>{%- if renderData.title %}{{ renderData.title }} | {% elif title %}{{ title }} | {% endif %}{{ metadata.title }}</title>
 
 <link rel="stylesheet" type="text/css" href="/assets/css/site.css"/>
