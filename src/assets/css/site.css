@@ -2,10 +2,6 @@
 html, body {
   height: 100%; }
 
-body {
-  display: flex;
-  flex-direction: column; }
-
 .hero {
   z-index: 1;
   position: relative; }
@@ -24,13 +20,6 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center 20%; }
-
-main {
-  flex-grow: 1; }
-
-footer.footer {
-  padding-top: 1rem;
-  padding-bottom: 1rem; }
 
 .navbar-menu.is-active {
   position: absolute;
