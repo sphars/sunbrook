@@ -24,6 +24,10 @@ html, body{
     height: 100%;
 }
 
+.container.content a, footer a {
+    text-decoration: underline;
+}
+
 .hero{
     z-index: 1;
     position: relative;
