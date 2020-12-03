@@ -9,10 +9,13 @@
 <meta property="og:title" content="{%- if renderData.title %}{{ renderData.title }} | {% elif title %}{{ title }} | {% endif %}{{ metadata.title }}">
 <meta property="og:type" content="website">
 <meta property="og:description" content="{{ description or metadata.description }}">
-<meta property="og:image" content="/assets/img/sunbrook-condos-lg.jpg">
+<meta property="og:image" content="/assets/img/sunbrook-condos-640x640.jpg">
 <meta property="og:url" content="{{ metadata.baseurl + page.url }}">
 
-<meta property="twitter:title" content="{%- if renderData.title %}{{ renderData.title }} | {% elif title %}{{ title }} | {% endif %}{{ metadata.title }}">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="{%- if renderData.title %}{{ renderData.title }} | {% elif title %}{{ title }} | {% endif %}{{ metadata.title }}">
+<meta name="twitter:description" content="{{ description or metadata.description }}">
+<meta name="twitter:image" content="/assets/img/sunbrook-condos-640x640.jpg">
 
 <title>{%- if renderData.title %}{{ renderData.title }} | {% elif title %}{{ title }} | {% endif %}{{ metadata.title }}</title>
 
