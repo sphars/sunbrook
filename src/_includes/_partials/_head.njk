@@ -1,27 +1,29 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<!-- Primary Meta tags -->
+<title>{%- if renderData.title %}{{ renderData.title }} | {% elif title %}{{ title }} | {% endif %}{{ metadata.title }}</title>
+<meta name="title" content="{%- if renderData.title %}{{ renderData.title }} | {% elif title %}{{ title }} | {% endif %}{{ metadata.title }}">
 <meta name="description" content="{{ description or metadata.description }}">
-<meta name="author" content="{{ author or metadata.author }}"/>
-<meta name="keywords" content="HOA, Condos, North Ogden">
 
+<!-- Open Graph / Facebook tags -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="{{ metadata.baseurl + page.url }}">
 <meta property="og:site_name" content="Sunbrook Condominiums">
 <meta property="og:title" content="{%- if renderData.title %}{{ renderData.title }} | {% elif title %}{{ title }} | {% endif %}{{ metadata.title }}">
-<meta property="og:type" content="website">
 <meta property="og:description" content="{{ description or metadata.description }}">
 <meta property="og:image" content="/assets/img/sunbrook-condos-640x640.jpg">
-<meta property="og:url" content="{{ metadata.baseurl + page.url }}">
 
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="{%- if renderData.title %}{{ renderData.title }} | {% elif title %}{{ title }} | {% endif %}{{ metadata.title }}">
-<meta name="twitter:description" content="{{ description or metadata.description }}">
-<meta name="twitter:image" content="/assets/img/sunbrook-condos-640x640.jpg">
-
-<title>{%- if renderData.title %}{{ renderData.title }} | {% elif title %}{{ title }} | {% endif %}{{ metadata.title }}</title>
-
-<link rel="stylesheet" type="text/css" href="/assets/css/site.css"/>
+<!-- Twitter tags -->
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="{{ metadata.baseurl + page.url }}">
+<meta property="twitter:title" content="{%- if renderData.title %}{{ renderData.title }} | {% elif title %}{{ title }} | {% endif %}{{ metadata.title }}">
+<meta property="twitter:description" content="{{ description or metadata.description }}">
+<meta property="twitter:image" content="/assets/img/sunbrook-condos-640x640.jpg">
 
 <link rel="shortcut icon" href="/favicon.ico">
 <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16x16.png">
+
+<link rel="stylesheet" type="text/css" href="/assets/css/site.css"/>
