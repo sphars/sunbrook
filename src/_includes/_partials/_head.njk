@@ -13,14 +13,14 @@
 <meta property="og:site_name" content="Sunbrook Condominiums">
 <meta property="og:title" content="{%- if renderData.title %}{{ renderData.title }} | {% elif title %}{{ title }} | {% endif %}{{ metadata.title }}">
 <meta property="og:description" content="{{ description or metadata.description }}">
-<meta property="og:image" content="/assets/img/sunbrook-condos-640x640.jpg">
+<meta property="og:image" content="{{ metadata.baseurl }}/assets/img/sunbrook-condos-640x640.jpg">
 
 <!-- Twitter tags -->
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:url" content="{{ metadata.baseurl + page.url }}">
 <meta name="twitter:title" content="{%- if renderData.title %}{{ renderData.title }} | {% elif title %}{{ title }} | {% endif %}{{ metadata.title }}">
 <meta name="twitter:description" content="{{ description or metadata.description }}">
-<meta name="twitter:image" content="/assets/img/sunbrook-condos-640x640.jpg">
+<meta name="twitter:image" content="{{ metadata.baseurl }}/assets/img/sunbrook-condos-640x640.jpg">
 
 <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32x32.png">
