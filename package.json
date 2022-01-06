@@ -13,14 +13,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/spncrhrstn/sunbrook.git"
+    "url": "git+https://github.com/sphars/sunbrook.git"
   },
   "author": "Spencer Harston",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/spncrhrstn/sunbrook/issues"
+    "url": "https://github.com/sphars/sunbrook/issues"
   },
-  "homepage": "https://github.com/spncrhrstn/sunbrook#readme",
+  "homepage": "https://github.com/sphars/sunbrook#readme",
   "devDependencies": {
     "@11ty/eleventy": "^0.12.1",
     "bulma": "^0.9.3",
