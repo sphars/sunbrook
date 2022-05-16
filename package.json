@@ -23,6 +23,7 @@
   "homepage": "https://github.com/sphars/sunbrook#readme",
   "devDependencies": {
     "@11ty/eleventy": "^1.0.0",
+    "@fontsource/noto-sans": "^4.5.10",
     "bulma": "^0.9.3",
     "node-sass": "^7.0.1"
   }
