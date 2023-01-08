@@ -26,6 +26,6 @@
     "@11ty/eleventy": "^1.0.2",
     "@fontsource/noto-sans": "^4.5.11",
     "bulma": "^0.9.4",
-    "node-sass": "^7.0.3"
+    "node-sass": "^8.0.0"
   }
 }
