@@ -4,12 +4,13 @@
   "description": "Website for Sunbrook Condominiums",
   "private": true,
   "scripts": {
-    "build": "npm run css-build && eleventy",
-    "watch": "npm run css-watch & eleventy --watch",
-    "serve": "npm run css-watch & eleventy --serve",
-    "clean": "rm -rf dist/",
-    "css-build": "node-sass --omit-source-map-url src/sass/site.scss src/assets/css/site.css",
-    "css-watch": "npm run css-build -- --watch"
+    "start": "run-p start:eleventy start:css",
+    "start:eleventy": "eleventy --serve",
+    "start:css": "sass --load-path=node_modules --watch src/sass/site.scss dist/assets/css/site.css",
+    "build": "run-s clean build:css build:eleventy",
+    "build:eleventy:": "eleventy",
+    "build:css": "sass --load-path=node_modules src/sass/site.scss dist/assets/css/site.css",
+    "clean": "rm -rf dist/"
   },
   "repository": {
     "type": "git",
@@ -25,6 +26,7 @@
     "@11ty/eleventy": "^2.0.1",
     "@fontsource/noto-sans": "^5.0.22",
     "bulma": "^1.0.1",
-    "node-sass": "^9.0.0"
+    "npm-run-all2": "^6.2.0",
+    "sass": "^1.77.4"
   }
 }

@@ -2,10 +2,8 @@ module.exports = function(eleventyConfig) {
 
     // copy static files to output
     eleventyConfig.addPassthroughCopy({
-        // "node_modules/bulma/css/bulma.min.css": "assets/css/bulma.min.css",
-        // "node_modules/bulma/css/bulma.css.map": "assets/css/bulma.css.map",
         "src/assets": "assets/",
-        "src/*.ico":"/",
+        "src/favicon.ico":"/",
         "node_modules/@fontsource/noto-sans/": "assets/fonts/noto-sans/"
     });
 
